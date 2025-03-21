@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Delius+Swash+Caps&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=tel],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+input[type=submit]:hover {
+    background-color: #b18b8b;
+}
+
+label {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+h3 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: "Delius Swash Caps", cursive;
+}
+
+.navbar {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    width: 72%;
+    height: 7rem;
+
+
+}
+
+ul {
+    padding-right: 10px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navbar .navmanus ul {
+    display: flex;
+
+    & li a {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -0.3rem;
+            left: 0;
+            width: 0%;
+            border-bottom: 0.2rem solid #415f69;
+            transition: all .3s linear;
+        }
+    }
+
+    & li a:hover::after {
+        width: 100%;
+
+    }
+}
+
+
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #f1f1f1;
+}
+
+.social {
+    text-align: center;
+    height: 20px;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 206.2vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2)
+}

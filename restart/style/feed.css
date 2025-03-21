@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Delius+Swash+Caps&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.navbar {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    width: 72%;
+    height: 7rem;
+
+
+}
+
+ul {
+    padding-right: 20px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    text-align: center;
+    padding: 30px;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.navbar .navmanus ul{
+    display: flex;
+    width: 33rem;
+
+    & li a{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -0.3rem;
+            left: 0;
+            width: 0%;
+            border-bottom: 0.2rem solid #415f69;
+            transition: all .3s linear;
+        }
+    }
+    & li a:hover::after{
+        width: 100%;
+
+    }
+}
+.navmanus{
+    align-items: center;
+}
+.feedback{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 74.6vh;
+    background-color: #f1f1f1;
+}
+
+h1{
+    padding-left: 17px;
+    letter-spacing: 3px;
+    font-size: 3rem;
+
+}
+
+p{
+    margin: 17px;
+    font-size: 25px;
+}
+
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+textarea{
+    height: 20rem;
+}
+.form{
+    border-radius: 20px;
+    padding: 30px 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+input[type=submit] {
+    background-color: #eee9e9;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+input[type=submit]:hover {
+    background-color:  rgba(0, 0, 0,.20);
+}
+
+
+
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #f1f1f1;
+}
+
+.social {
+    text-align: center;
+    height: 20px;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 208.1vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Delius&family=Delius+Swash+Caps&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    height: 0px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.logo {
+    display: flex;
+    float: left;
+    width: 72%;
+    height: 7rem;
+
+
+}
+
+.navbar .navmanus ul {
+    display: flex;
+
+    & li a {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -0.3rem;
+            left: 0;
+            width: 0%;
+            border-bottom: 0.2rem solid #415f69;
+            transition: all .3s linear;
+        }
+    }
+
+    & li a:hover::after {
+        width: 100%;
+
+    }
+}
+
+ul {
+    padding-right: 10px;
+}
+
+
+li {
+    list-style: none;
+    display: inline;
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navmanus {
+    height: 3rem;
+}
+
+h1 {
+    padding-left: 31px;
+    padding-right: 60%;
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(179, 182, 183);
+    text-shadow: 2px 2px 5px #000;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(179, 182, 183), 182, 183;
+}
+
+p {
+    padding-left: 31px;
+    padding-right: 60%;
+    font-size: 20px;
+    color: #fff;
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cars {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-image: url(../img/bmw.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+
+}
+
+.gtr {
+    background-image: url(../img/gt.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+}
+
+.lambo {
+    background-image: url(../img/lambo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+}
+
+.rs {
+    background-image: url(../img/porsh.avif);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+}
+
+footer {
+    display: grid;
+    /* justify-content: center; */
+    align-items: center;
+    height: 150px;
+    background-color: #f1f1f1;
+}
+
+.social {
+    text-align: center;
+    height: 20px;
+}
+
+.copy {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 118.9rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2)
+}
