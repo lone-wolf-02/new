@@ -21,7 +21,7 @@
   poster.src = movie.thumbnail; poster.alt = movie.title;
   title.textContent = movie.title;
   desc.textContent = movie.description;
-  downloadLink.href = '/download.html?id=' + movie.id;
+  downloadLink.href = 'download.html?id=' + movie.id;
 
   let lastTime = 0;
   let startTs = 0;

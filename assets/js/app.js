@@ -119,8 +119,8 @@
       } else {
         params.set('q', q);
       }
-      // Always navigate home to show results
-      window.location.href = '/index.html' + (params.toString() ? ('?' + params.toString()) : '');
+      // Always navigate home to show results (relative link for file:// support)
+      window.location.href = 'index.html' + (params.toString() ? ('?' + params.toString()) : '');
     });
   }
 })();

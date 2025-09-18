@@ -18,7 +18,7 @@
         <div class="muted">${movie.description}</div>
       </div>
       <div class="actions">
-        <a class="secondary" href="/movie.html?id=${movie.id}">Back</a>
+        <a class="secondary" href="movie.html?id=${movie.id}">Back</a>
       </div>
     </div>
   `;

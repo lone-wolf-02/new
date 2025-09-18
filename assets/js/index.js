@@ -20,7 +20,7 @@
     });
 
     grid.innerHTML = filtered.map(m => `
-      <a class="movie-card" href="/movie.html?id=${m.id}" aria-label="${m.title}">
+      <a class="movie-card" href="movie.html?id=${m.id}" aria-label="${m.title}">
         <img src="${m.thumbnail}" alt="${m.title}">
         <div class="meta">
           <div class="title">${m.title}</div>
