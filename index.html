@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MovieHub — Stream & Download</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="/index.html">MovieHub</a>
+        <form class="search" role="search" aria-label="Search movies">
+          <input id="globalSearch" type="search" placeholder="Search movies..." autocomplete="off" />
+          <button type="submit" aria-label="Search">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="ad-rail left" aria-label="Advertisement left">
+        <div class="ad-box">Google Ad</div>
+      </aside>
+      <section class="content" id="homeContent">
+        <div class="controls">
+          <div class="category-filter">
+            <label for="categorySelect">Category</label>
+            <select id="categorySelect">
+              <option value="all">All</option>
+              <option value="Bangla">Bangla Movies</option>
+              <option value="Hindi">Hindi Movies</option>
+              <option value="Hollywood Hindi Dubbed">Hollywood Movies (Hindi Dubbed)</option>
+              <option value="South Indian Hindi Dubbed">South Indian Movies (Hindi Dubbed)</option>
+              <option value="Cartoon">Cartoon Movies</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="resultsMeta" class="results-meta" hidden>
+          <span id="resultsText"></span>
+          <button id="clearSearch" class="link">Clear search</button>
+        </div>
+
+        <div id="movieGrid" class="movie-grid" aria-live="polite"></div>
+      </section>
+      <aside class="ad-rail right" aria-label="Advertisement right">
+        <div class="ad-box">Google Ad</div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© <span id="year"></span> MovieHub</span>
+        <a class="link" href="/admin.html">Admin</a>
+      </div>
+    </footer>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/index.js"></script>
+  </body>
+  </html>
+

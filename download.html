@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Download Movie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="/index.html">MovieHub</a>
+        <form class="search" role="search" aria-label="Search movies">
+          <input id="globalSearch" type="search" placeholder="Search movies..." autocomplete="off" />
+          <button type="submit" aria-label="Search">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="ad-rail left" aria-label="Advertisement left">
+        <div class="ad-box">Google Ad</div>
+      </aside>
+      <section class="content" id="downloadContent">
+        <h1>Download</h1>
+        <div id="downloadInfo" class="download-info"></div>
+        <div class="download-actions">
+          <a id="downloadBtn" class="primary" download>Download file</a>
+        </div>
+      </section>
+      <aside class="ad-rail right" aria-label="Advertisement right">
+        <div class="ad-box">Google Ad</div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© <span id="year"></span> MovieHub</span>
+        <a class="link" href="/admin.html">Admin</a>
+      </div>
+    </footer>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/download.js"></script>
+  </body>
+  </html>
+

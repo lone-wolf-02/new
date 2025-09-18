@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin — MovieHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="logo" href="/index.html">MovieHub</a>
+      </div>
+    </header>
+
+    <main class="layout admin">
+      <aside class="ad-rail left" aria-label="Advertisement left">
+        <div class="ad-box">Google Ad</div>
+      </aside>
+      <section class="content" id="adminContent">
+        <div id="authView" class="card">
+          <h1>Admin Login</h1>
+          <form id="loginForm">
+            <label>Username
+              <input type="text" id="adminUser" required autocomplete="username" />
+            </label>
+            <label>Password
+              <input type="password" id="adminPass" required autocomplete="current-password" />
+            </label>
+            <button type="submit" class="primary">Login</button>
+          </form>
+        </div>
+
+        <div id="dashboardView" class="dashboard" hidden>
+          <div class="dashboard-header">
+            <h1>Dashboard</h1>
+            <button id="logoutBtn" class="secondary">Logout</button>
+          </div>
+
+          <div class="grid">
+            <section class="card">
+              <h2>Upload Movie</h2>
+              <form id="uploadForm">
+                <label>Title
+                  <input id="movieTitleInput" type="text" required />
+                </label>
+                <label>Description
+                  <textarea id="movieDescInput" rows="4" required></textarea>
+                </label>
+                <label>Category
+                  <select id="movieCatInput" required>
+                    <option value="Bangla">Bangla</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Hollywood Hindi Dubbed">Hollywood Hindi Dubbed</option>
+                    <option value="South Indian Hindi Dubbed">South Indian Hindi Dubbed</option>
+                    <option value="Cartoon">Cartoon</option>
+                  </select>
+                </label>
+                <label>Thumbnail URL
+                  <input id="movieThumbInput" type="url" required placeholder="https://..." />
+                </label>
+                <label>Stream URL (mp4/hls)
+                  <input id="movieStreamInput" type="url" required placeholder="https://..." />
+                </label>
+                <label>Download URL
+                  <input id="movieDownloadInput" type="url" required placeholder="https://..." />
+                </label>
+                <button type="submit" class="primary">Add Movie</button>
+              </form>
+            </section>
+
+            <section class="card">
+              <h2>Library</h2>
+              <div id="adminMovieList" class="admin-movie-list"></div>
+            </section>
+
+            <section class="card">
+              <h2>Analytics</h2>
+              <div class="analytics">
+                <div>
+                  <div class="metric">
+                    <div class="metric-label">Total Watch Time</div>
+                    <div class="metric-value" id="totalWatchTime">0m</div>
+                  </div>
+                  <div class="metric">
+                    <div class="metric-label">Top Watched Movie</div>
+                    <div class="metric-value" id="topWatched">—</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <aside class="ad-rail right" aria-label="Advertisement right">
+        <div class="ad-box">Google Ad</div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© <span id="year"></span> MovieHub</span>
+      </div>
+    </footer>
+
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/admin.js"></script>
+  </body>
+  </html>
+
