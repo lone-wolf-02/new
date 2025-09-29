@@ -55,23 +55,11 @@ a:hover { text-decoration: underline; }
 
 .layout {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr) 220px;
+  grid-template-columns: minmax(0, 1fr);
   gap: 16px;
-  max-width: 1400px;
+  max-width: 1200px;
   padding: 16px;
   margin: 0 auto;
-}
-.ad-slot { position: sticky; top: 72px; align-self: start; }
-.ad-placeholder {
-  height: 600px;
-  background: #0e141c;
-  border: 1px dashed #233042;
-  border-radius: 12px;
-  color: #6b7b8d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
 }
 
 .content { min-height: 60vh; }
@@ -91,7 +79,7 @@ a:hover { text-decoration: underline; }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 16px;
 }
 .card {
@@ -99,6 +87,7 @@ a:hover { text-decoration: underline; }
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 14px;
+  display: block;
 }
 .movie-card { overflow: hidden; padding: 0; }
 .thumb {
