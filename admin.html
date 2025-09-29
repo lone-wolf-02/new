@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieStream - Admin</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <meta name="theme-color" content="#0b0f14">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/index.html">🎬 MovieStream</a>
+      <nav class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/admin.html" aria-current="page">Admin</a>
+      </nav>
+      <div class="search">
+        <input id="globalSearch" type="search" placeholder="Search movies..." autocomplete="off" />
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="content" id="adminContent">
+      <h1 class="page-title">Admin Panel</h1>
+      <div id="adminAuth" class="card"></div>
+      <div id="adminApp" class="admin-app" hidden>
+        <div class="admin-sections">
+          <section class="card">
+            <h2>Add Movie</h2>
+            <form id="movieForm" class="form-grid">
+              <label>Title<input name="title" required /></label>
+              <label>Category
+                <select name="category" required>
+                  <option value="bangla">Bangla Movie</option>
+                  <option value="hindi">Hindi Movie</option>
+                  <option value="hollywood-hindi-dubbed">Hollywood Movies (Hindi Dubbed)</option>
+                  <option value="south-hindi-dubbed">South Indian Movies (Hindi Dubbed)</option>
+                  <option value="cartoon">Cartoon Movies</option>
+                </select>
+              </label>
+              <label>Thumbnail URL<input name="thumbnailUrl" placeholder="https://..." /></label>
+              <label>Or Thumbnail File<input type="file" name="thumbnailFile" accept="image/*" /></label>
+              <label>Stream URL<input name="streamUrl" placeholder="https://...mp4" /></label>
+              <label>Download URL<input name="downloadUrl" placeholder="https://...mp4" /></label>
+              <label>Description<textarea name="description" rows="5" required></textarea></label>
+              <div class="form-actions">
+                <button type="submit">Add Movie</button>
+                <button type="reset" class="secondary">Reset</button>
+              </div>
+            </form>
+          </section>
+          <section class="card">
+            <h2>Movies</h2>
+            <div id="adminMovieList" class="list"></div>
+          </section>
+          <section class="card">
+            <h2>Analytics</h2>
+            <div id="analytics"></div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> MovieStream. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/js/data.js"></script>
+  <script src="/assets/js/app.js"></script>
+  <script src="/assets/js/admin.js"></script>
+</body>
+</html>
+
