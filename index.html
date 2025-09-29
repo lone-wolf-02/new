@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieStream - Home</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <meta name="theme-color" content="#0b0f14">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/index.html">🎬 MovieStream</a>
+      <nav class="nav-links">
+        <a href="/index.html">Home</a>
+        <a href="/admin.html">Admin</a>
+      </nav>
+      <div class="search">
+        <input id="globalSearch" type="search" placeholder="Search movies..." autocomplete="off" />
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="ad-slot ad-left" aria-label="Advertisement left">
+      <div class="ad-placeholder">Google Ad</div>
+    </aside>
+    <section class="content" id="homeContent">
+      <div class="categories" id="categoryChips"></div>
+      <h1 class="page-title">Browse Movies</h1>
+      <div id="resultsMeta" class="results-meta"></div>
+      <div class="grid" id="movieGrid"></div>
+    </section>
+    <aside class="ad-slot ad-right" aria-label="Advertisement right">
+      <div class="ad-placeholder">Google Ad</div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> MovieStream. All rights reserved.</p>
+  </footer>
+
+  <script src="/assets/js/data.js"></script>
+  <script src="/assets/js/app.js"></script>
+  <script src="/assets/js/home.js"></script>
+</body>
+</html>
+
